@@ -1,46 +1,18 @@
-# Getting Started with Create React App
+# Skeleton 구현해보기
+ - Skeleton이란 : 웹페이지에서 로드  시간이 짧은 것처럼 보이게 하는 몇 가지 방법 중, 데이터가 로드되기 전에 콘텐츠가 위치한 자리에 자리비움을 표시해주는 것
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 장단점
+ - 장점 : 블랭크 페이지 < 스피너 < Skeleton 순서대로 사용자가 빠르다고 느낀다
 
-## Available Scripts
+ - 단점 : 스켈레톤을 화면마다 표시하야되기 때문에 상대적으로 시간이나 비용이 증가
 
-In the project directory, you can run:
+### 예시
+  - 유튜브 홈 화면
+  - 페이스북 뉴스피드
+  - 구글 드라이브
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Skeleton 적용 시 권장사항
+ - 콘텐츠의 로드를 방해해서는 안된다
+ - 스켈레톤 디자인 시 애니메이션을 함께 사용해 사용자의 지루함을 덜을 수 있다
+    - Wave, pulse 중 wave를 사용하는 것 이 좋다
+    - 느리고 안정적인 애니메이션이 로딩 시간이 짧다고 느껴진다
